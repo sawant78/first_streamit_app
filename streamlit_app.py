@@ -46,9 +46,9 @@ streamlit.text(my_data_row)
 
 my_cur1 = my_cnx.cursor()
 my_cur1.execute("select * from pc_rivery_db.public.fruit_load_list")
-my_data_row1 = my_cur1.fetchone()
+my_data_row1 = my_cur1.fetchall()
 streamlit.text("Fruitload list is:")
-streamlit.text(my_data_row1)
+streamlit.dataframe(my_data_row1)
 
 
 
