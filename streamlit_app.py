@@ -50,6 +50,9 @@ my_data_row1 = my_cur1.fetchall()
 streamlit.text("Fruitload list is:")
 streamlit.dataframe(my_data_row1)
 
+streamlit.header("Allow end user to add fruits!")
+fruit_choice_add = streamlit.text_input('What fruit would you like add in the list about?')
+
 
 
 
